@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dimitrios Stephanou – AI & Data Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900 text-slate-100">
+
+  <!-- Navbar -->
+  <header class="sticky top-0 bg-slate-900/90 backdrop-blur border-b border-slate-800 z-20">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+      <span class="font-semibold tracking-wide">Dimitrios Stephanou</span>
+      <nav class="space-x-4 text-sm">
+        <a href="#about" class="hover:text-cyan-400">About</a>
+        <a href="#skills" class="hover:text-cyan-400">Skills</a>
+        <a href="#projects" class="hover:text-cyan-400">Projects</a>
+        <a href="#experience" class="hover:text-cyan-400">Experience</a>
+        <a href="#education" class="hover:text-cyan-400">Education</a>
+        <a href="#contact" class="hover:text-cyan-400">Contact</a>
+
+        <a href="index-fr.html"
+           class="ml-4 px-2 py-1 rounded-full border border-slate-600 text-xs hover:border-cyan-400">
+          FR
+        </a>
+      </nav>
+    </div>
+  </header>
+
+
+  <main class="max-w-5xl mx-auto px-4 pb-16">
+
+    <!-- HERO -->
+    <section class="py-16 flex flex-col gap-6">
+      <p class="text-sm uppercase tracking-[0.3em] text-cyan-400">AI & Computer Science Portfolio</p>
+
+      <h1 class="text-4xl md:text-5xl font-bold">Dimitrios Stephanou</h1>
+
+      <p class="text-lg text-slate-300 max-w-2xl">
+        Master’s student in Computer Science, specializing in Artificial Intelligence at Université Claude Bernard Lyon 1.
+        Looking for a <strong>5–6 month final-year internship starting February 2026</strong> in machine learning,
+        deep learning, AI engineering or applied research.
+      </p>
+
+      <div class="flex gap-3 flex-wrap">
+        <a href="CV_EN.pdf" class="px-4 py-2 rounded-full bg-cyan-500 text-slate-900 font-medium">Download CV (EN)</a>
+        <a href="#contact" class="px-4 py-2 rounded-full border border-slate-500 hover:border-cyan-400">Contact me</a>
+      </div>
+
+      <div class="text-sm text-slate-400">
+        Machine Learning · Deep Learning · Intelligent Agents · Graph Neural Networks
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="py-12 border-t border-slate-800">
+      <h2 class="text-2xl font-semibold mb-4">About</h2>
+
+      <p class="text-slate-300 leading-relaxed">
+        I am a Master’s student in Artificial Intelligence at Université Claude Bernard Lyon 1. Passionate about
+        intelligent systems, applied machine learning, graph-based models and agent-based architectures.
+      </p>
+
+      <p class="text-slate-300 leading-relaxed mt-3">
+        I am looking for a <strong>5–6 month internship starting February 2026</strong>, ideally focused on ML/DL,
+        applied AI research, model development or intelligent systems engineering.
+      </p>
+
+      <p class="text-slate-300 mt-3 text-sm">
+        Languages: Greek (native), French (fluent), English (C2 – Cambridge certification)
+      </p>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-12 border-t border-slate-800">
+      <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+
+      <div class="grid md:grid-cols-3 gap-6 text-sm">
+
+        <div class="bg-slate-800/60 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Programming</h3>
+          <ul class="text-slate-300 space-y-1">
+            <li>Python, Java, C++</li>
+            <li>JavaScript (Vue.js)</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-800/60 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">AI & Data</h3>
+          <ul class="text-slate-300 space-y-1">
+            <li>PyTorch, PyTorch Geometric</li>
+            <li>scikit-learn, NumPy, Pandas, Matplotlib</li>
+            <li>Graph Neural Networks, BDI Agents</li>
+            <li>ML engineering & deep learning</li>
+          </ul>
+        </div>
+
+        <div class="bg-slate-800/60 rounded-xl p-4">
+          <h3 class="font-semibold mb-2">Tools & Workflow</h3>
+          <ul class="text-slate-300 space-y-1">
+            <li>Git, Linux, VS Code, Jupyter, Anaconda</li>
+            <li>Docker (basics)</li>
+            <li>Agile teamwork</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-12 border-t border-slate-800">
+      <div class="flex items-center justify-between mb-4 gap-2 flex-wrap">
+        <h2 class="text-2xl font-semibold">Projects</h2>
+
+        <div class="flex gap-2 text-xs">
+          <button type="button"
+                  data-filter="all"
+                  class="project-filter-btn px-3 py-1 rounded-full border border-cyan-500 bg-cyan-500 text-slate-900">
+            All
+          </button>
+          <button type="button"
+                  data-filter="ai"
+                  class="project-filter-btn px-3 py-1 rounded-full border border-slate-600 hover:border-cyan-400">
+            AI projects
+          </button>
+          <button type="button"
+                  data-filter="other"
+                  class="project-filter-btn px-3 py-1 rounded-full border border-slate-600 hover:border-cyan-400">
+            Other projects
+          </button>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- EV Agents (BDI / JADE) -->
+        <article class="bg-slate-800/60 rounded-xl p-4" data-category="ai">
+          <img src="images/ev_agents.jpg" class="rounded-lg mb-3 w-full h-40 object-cover" alt="EV BDI agents">
+
+          <h3 class="font-semibold">Intelligent Agents for Electric Vehicles</h3>
+          <p class="text-xs text-cyan-300 mb-1">Java · JADE · BDI Agents</p>
+          <p class="text-sm text-slate-300 mb-2">
+            Cognitive BDI agents negotiating charging strategies using the JADE platform. Each EV makes
+            decentralized decisions based on its needs and station availability.
+          </p>
+          <p class="text-xs text-slate-400">Academic project – code available on request.</p>
+        </article>
+
+        <!-- Airport GNN -->
+        <article class="bg-slate-800/60 rounded-xl p-4" data-category="ai">
+          <img src="images/aeroport_gnn.jpg" class="rounded-lg mb-3 w-full h-40 object-cover" alt="Airport GNN">
+
+          <h3 class="font-semibold">Airport Graph Anomaly Detection</h3>
+          <p class="text-xs text-cyan-300 mb-1">Python · PyTorch Geometric · GNN</p>
+          <p class="text-sm text-slate-300 mb-2">
+            Anomaly detection on a graph of airports using GCN and MLP models, with structure-aware evaluation
+            and automatic validation using Wikidata.
+          </p>
+          <a href="https://github.com/Dsteph07/aeroportGNN" class="text-xs text-cyan-400 hover:underline">View code</a>
+        </article>
+
+        <!-- Emotion Recognition (RNN) -->
+        <article class="bg-slate-800/60 rounded-xl p-4" data-category="ai">
+          <img src="images/emotion_rnn.jpg" class="rounded-lg mb-3 w-full h-40 object-cover" alt="Emotion RNN">
+
+          <h3 class="font-semibold">Text Emotion Classification</h3>
+          <p class="text-xs text-cyan-300 mb-1">Python · PyTorch · RNN</p>
+          <p class="text-sm text-slate-300 mb-2">
+            Recurrent neural network for emotion classification from text. Full pipeline: preprocessing,
+            vectorisation, training and evaluation.
+          </p>
+          <a href="https://github.com/Dsteph07/reconnaissance_emotion"
+             class="text-xs text-cyan-400 hover:underline">View code</a>
+        </article>
+
+        <!-- FashionMNIST -->
+        <article class="bg-slate-800/60 rounded-xl p-4" data-category="ai">
+          <img src="images/fashion_mnist.jpg" class="rounded-lg mb-3 w-full h-40 object-cover" alt="Fashion MNIST">
+
+          <h3 class="font-semibold">FashionMNIST Image Recognition</h3>
+          <p class="text-xs text-cyan-300 mb-1">Python · PyTorch · CNN</p>
+          <p class="text-sm text-slate-300 mb-2">
+            Clothing image classification using MLP and CNN models, hyperparameter tuning and result visualization.
+          </p>
+          <a href="https://github.com/Dsteph07/reconnaissanceFashionMNIST"
+             class="text-xs text-cyan-400 hover:underline">View code</a>
+        </article>
+
+        <!-- Sokoban -->
+        <article class="bg-slate-800/60 rounded-xl p-4" data-category="other">
+          <img src="images/sokoban.jpg" class="rounded-lg mb-3 w-full h-40 object-cover" alt="Sokoban">
+
+          <h3 class="font-semibold">Sokoban</h3>
+          <p class="text-xs text-cyan-300 mb-1">Java · Game Development</p>
+          <p class="text-sm text-slate-300 mb-2">
+            Implementation of the Sokoban puzzle game, focusing on grid logic, path constraints and algorithmic decisions.
+          </p>
+          <a href="https://github.com/Dsteph07/sokoban" class="text-xs text-cyan-400 hover:underline">View code</a>
+        </article>
+
+        <!-- Smart Intersection -->
+        <article class="bg-slate-800/60 rounded-xl p-4" data-category="ai">
+          <img src="images/smart_intersection.jpg" class="rounded-lg mb-3 w-full h-40 object-cover" alt="Smart intersection">
+
+          <h3 class="font-semibold">Smart Intersection</h3>
+          <p class="text-xs text-cyan-300 mb-1">Simulation · Traffic Control</p>
+          <p class="text-sm text-slate-300 mb-2">
+            Simulation of an intelligent traffic intersection with rule-based traffic control and
+            prioritisation of flows. Focus on modelling traffic logic and decision rules.
+          </p>
+          <a href="https://github.com/Dsteph07/smartIntersection"
+             class="text-xs text-cyan-400 hover:underline">View code</a>
+        </article>
+
+        <!-- Skyward -->
+        <article class="bg-slate-800/60 rounded-xl p-4" data-category="other">
+          <img src="images/skyward.jpg" class="rounded-lg mb-3 w-full h-40 object-cover" alt="Skyward">
+
+          <h3 class="font-semibold">Skyward</h3>
+          <p class="text-xs text-cyan-300 mb-1">C++ · Game Development</p>
+          <p class="text-sm text-slate-300 mb-2">
+            A small 2D game built to practise OOP, game loops and player interaction mechanics.
+          </p>
+          <a href="https://github.com/Dsteph07/Skyward"
+             class="text-xs text-cyan-400 hover:underline">View code</a>
+        </article>
+
+        <!-- Social Network Blog -->
+        <article class="bg-slate-800/60 rounded-xl p-4" data-category="other">
+          <img src="images/social_blog.jpg" class="rounded-lg mb-3 w-full h-40 object-cover" alt="Social blog">
+
+          <h3 class="font-semibold">Social Network Blog</h3>
+          <p class="text-xs text-cyan-300 mb-1">Web Development</p>
+          <p class="text-sm text-slate-300 mb-2">
+            Social/blog hybrid web application with posts, comments, profiles and authentication.
+          </p>
+          <a href="https://github.com/Dsteph07/reseau_social_blog"
+             class="text-xs text-cyan-400 hover:underline">View code</a>
+        </article>
+
+        <!-- Carbon Footprint Web App -->
+        <article class="bg-slate-800/60 rounded-xl p-4" data-category="other">
+          <img src="images/empreinte.jpg" class="rounded-lg mb-3 w-full h-40 object-cover" alt="Carbon footprint web app">
+
+          <h3 class="font-semibold">Carbon Footprint Web App</h3>
+          <p class="text-xs text-cyan-300 mb-1">Web · Environment</p>
+          <p class="text-sm text-slate-300 mb-2">
+            Web application for estimating or analysing carbon footprint based on user activities and
+            scenarios, with the goal of raising awareness about environmental impact.
+          </p>
+          <a href="https://github.com/Dsteph07/projet_empreinte_carbonne"
+             class="text-xs text-cyan-400 hover:underline">View code</a>
+        </article>
+
+        <!-- Dance Class Booking Web App -->
+        <article class="bg-slate-800/60 rounded-xl p-4" data-category="other">
+          <img src="images/bdadmin.jpg" class="rounded-lg mb-3 w-full h-40 object-cover" alt="Dance booking web app">
+
+          <h3 class="font-semibold">Dance Class Booking Web App</h3>
+          <p class="text-xs text-cyan-300 mb-1">Web Application</p>
+          <p class="text-sm text-slate-300 mb-2">
+            Web application used to schedule and register for dance time slots. Users can browse available
+            sessions and book a time slot through a simple interface.
+          </p>
+          <a href="https://github.com/Dsteph07/BDWebAdmin"
+             class="text-xs text-cyan-400 hover:underline">View code</a>
+        </article>
+
+      </div>
+
+      <div class="mt-8 text-sm">
+        <a class="text-cyan-400 hover:underline" href="https://github.com/Dsteph07">See all repositories</a>
+      </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="py-12 border-t border-slate-800">
+      <h2 class="text-2xl font-semibold mb-4">Experience</h2>
+
+      <div class="space-y-4 text-sm">
+
+        <div>
+          <h3 class="font-semibold">Front-end Web Developer Intern – LaPoste.fr</h3>
+          <p class="text-slate-400 text-xs">Paris, France · May – August 2024</p>
+          <ul class="list-disc list-inside text-slate-300 mt-1 space-y-1">
+            <li>Developed interactive UI components using Vue.js.</li>
+            <li>Collaborated with backend engineers in an Agile workflow.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold">Seasonal Receptionist – Hotel, Evia</h3>
+          <p class="text-slate-400 text-xs">Evia, Greece · June – July 2022</p>
+          <ul class="list-disc list-inside text-slate-300 mt-1 space-y-1">
+            <li>Assisted international customers and handled reservations.</li>
+            <li>Phone and front-desk management.</li>
+            <li>Teamwork in a multicultural environment.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section id="education" class="py-12 border-t border-slate-800">
+      <h2 class="text-2xl font-semibold mb-4">Education</h2>
+
+      <div class="text-sm text-slate-300 space-y-3">
+        <p>
+          <strong>Master’s in Computer Science – Artificial Intelligence</strong><br>
+          Université Claude Bernard Lyon 1 · 2024–2026
+        </p>
+
+        <p>
+          <strong>Bachelor’s in Computer Science</strong><br>
+          Université Claude Bernard Lyon 1 · 2020–2024
+        </p>
+
+        <p>
+          <strong>French Baccalauréat</strong><br>
+          Franco-Hellenic High School, Athens · 2020
+        </p>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-12 border-t border-slate-800">
+      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+
+      <p class="text-slate-300 text-sm mb-2">Feel free to reach out for internship opportunities and collaborations.</p>
+
+      <ul class="text-sm space-y-1">
+        <li>Email: <a class="text-cyan-400" href="mailto:stephanoudimitri5@gmail.com">stephanoudimitri5@gmail.com</a></li>
+        <li>Phone: <span class="text-slate-300">+33 7 49 14 06 54</span></li>
+        <li>LinkedIn: <a class="text-cyan-400" href="https://www.linkedin.com/in/dimitrios-stephanou-129538354/">
+          linkedin.com/in/dimitrios-stephanou-129538354/
+        </a></li>
+        <li>GitHub: <a class="text-cyan-400" href="https://github.com/Dsteph07">github.com/Dsteph07</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Filter script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const buttons = document.querySelectorAll(".project-filter-btn");
+      const cards = document.querySelectorAll("[data-category]");
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const filter = btn.getAttribute("data-filter");
+
+          buttons.forEach((b) => {
+            b.classList.remove("bg-cyan-500", "text-slate-900", "border-cyan-500");
+            b.classList.add("border-slate-600");
+          });
+
+          btn.classList.remove("border-slate-600");
+          btn.classList.add("bg-cyan-500", "text-slate-900", "border-cyan-500");
+
+          cards.forEach((card) => {
+            const category = card.getAttribute("data-category");
+            if (filter === "all" || category === filter) {
+              card.classList.remove("hidden");
+            } else {
+              card.classList.add("hidden");
+            }
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
